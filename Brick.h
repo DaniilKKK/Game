@@ -10,6 +10,8 @@ public:
 	~Brick();
 	
 	friend class BrickPile;
+	bool strong = false;
+	/*void WallBrick();*/
 
 private:
 	int _size_x;

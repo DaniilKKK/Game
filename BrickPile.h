@@ -9,15 +9,26 @@ public:
 	BrickPile();
 	~BrickPile();
 
-	void Destroy(Puck p);
+	/*void WallBrick(Puck p);*/
 
 	friend class GameTable;
-	//friend class Brick;
+	/*friend class Brick;
+	/*void WallBrick();*/
 	friend void GameRun();
 
 	Sprite getBlocks() {
 		return *block;
+		
+		
 	}
+
+
+	/*void WallBrick()
+	{
+
+		block.setPosition()
+
+	}*/
 
 private:
 	int n = 0;//Измеряется для победы Если 0, то победа

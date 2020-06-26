@@ -1,5 +1,6 @@
 #include "pch.h"
 #include "Brick.h"
+#include "BrickPile.h"
 
 
 
@@ -12,3 +13,9 @@ Brick::Brick()
 Brick::~Brick()
 {
 }
+
+
+/*void Brick::WallBrick() 
+{
+	
+}*/

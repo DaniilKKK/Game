@@ -86,6 +86,20 @@ void GameRun() {
 
 	float dx_Paddle = 6;
 	bool pusk = true;
+	BP._Brick_Pile[11].strong = true;
+	BP._Brick_Pile[12].strong = true;
+	BP._Brick_Pile[13].strong = true;
+	BP._Brick_Pile[21].strong = true;
+	BP._Brick_Pile[22].strong = true;
+	BP._Brick_Pile[23].strong = true;
+	BP._Brick_Pile[31].strong = true;
+	BP._Brick_Pile[32].strong = true;
+	BP._Brick_Pile[33].strong = true;
+	BP._Brick_Pile[41].strong = true;
+	BP._Brick_Pile[42].strong = true;
+	BP._Brick_Pile[43].strong = true;
+
+	/*bool Kpepkie;*/
 	//float dx_Puck = 6;
 	//float dy_Puck = 0;
 
@@ -104,23 +118,34 @@ void GameRun() {
 		Puck1.move_x();
 		for (int i = 0; i <= BP.n; i++) {
 			if (isCollide(BP.block[i], Puck1.get())) {
-				BP.block[i].setPosition(-100, 0);
-				Puck1.dx_Puck = v1.Change_Dir(Puck1.dx_Puck);
-				Score = Score + 100;
-				cout << "Score: " << Score << endl;
-				--n1;
+				if (BP._Brick_Pile[i].strong == false) {
+					BP.block[i].setPosition(-100, 0);
+					Puck1.dx_Puck = v1.Change_Dir(Puck1.dx_Puck);
+					Score = Score + 100;
+					cout << "Score: " << Score << endl;
+					--n1;
+				}
 
+				else {
+					Puck1.dx_Puck = v1.Change_Dir(Puck1.dx_Puck);
+				}
 			}
 		}
 
 		Puck1.move_y();
 		for (int i = 0; i <= BP.n; i++) {
 			if (isCollide(BP.block[i], Puck1.get())) {
-				BP.block[i].setPosition(-100, 0);
-				Puck1.dy_Puck = v1.Change_Dir(Puck1.dy_Puck);
-				Score = Score + 100;
-				cout << "Score: " << Score << endl;
-				--n1;
+				if (BP._Brick_Pile[i].strong == false) {
+					BP.block[i].setPosition(-100, 0);
+					Puck1.dy_Puck = v1.Change_Dir(Puck1.dy_Puck);
+					Score = Score + 100;
+					cout << "Score: " << Score << endl;
+					--n1;
+				}
+
+				else {
+					Puck1.dy_Puck = v1.Change_Dir(Puck1.dy_Puck);
+				}
 			}
 		}
 
