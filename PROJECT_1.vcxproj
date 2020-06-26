@@ -119,8 +119,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -140,8 +139,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -170,6 +168,7 @@
     <ClCompile Include="PROJECT_1.cpp" />
     <ClCompile Include="Puck.cpp" />
     <ClCompile Include="PuckSupply.cpp" />
+    <ClCompile Include="Velocity.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bdsd.h" />
@@ -180,6 +179,7 @@
     <ClInclude Include="Pandlle.h" />
     <ClInclude Include="Puck.h" />
     <ClInclude Include="PuckSupply.h" />
+    <ClInclude Include="Velocity.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

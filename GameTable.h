@@ -6,6 +6,7 @@
 #include "Paddle.h"
 #include "Puck.h"
 
+
 using namespace sf;
 
 class GameTable

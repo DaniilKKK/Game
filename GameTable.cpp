@@ -2,6 +2,7 @@
 #include "GameTable.h"
 #include "BrickPile.h"
 #include "Paddle.h"
+#include "Velocity.h"
 #include <vector>
 #include <windows.h>
 
@@ -75,6 +76,7 @@ void GameRun() {
 	BrickPile BP; //Стена
 	Paddle puddle1;//Телега
 	Puck Puck1;   //Шайба1
+	Velocity v1;
 	RenderWindow app(VideoMode(800, 600), "Arkanoid!");
 	app.setFramerateLimit(60);
 	Texture	BG;
@@ -103,7 +105,7 @@ void GameRun() {
 		for (int i = 0; i <= BP.n; i++) {
 			if (isCollide(BP.block[i], Puck1.get())) {
 				BP.block[i].setPosition(-100, 0);
-				Puck1.dx_Puck = -Puck1.dx_Puck;
+				Puck1.dx_Puck = v1.Change_Dir(Puck1.dx_Puck);
 				Score = Score + 100;
 				cout << "Score: " << Score << endl;
 				--n1;
@@ -115,7 +117,7 @@ void GameRun() {
 		for (int i = 0; i <= BP.n; i++) {
 			if (isCollide(BP.block[i], Puck1.get())) {
 				BP.block[i].setPosition(-100, 0);
-				Puck1.dy_Puck = -Puck1.dy_Puck;
+				Puck1.dy_Puck = v1.Change_Dir(Puck1.dy_Puck);
 				Score = Score + 100;
 				cout << "Score: " << Score << endl;
 				--n1;

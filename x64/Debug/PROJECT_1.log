@@ -1,18 +1,1 @@
-﻿  BrickPile.cpp
-c:\users\yurin\source\repos\project_1\project_1\puck.h(24): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-c:\users\yurin\source\repos\project_1\project_1\puck.h(25): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-c:\users\yurin\source\repos\project_1\project_1\puck.h(29): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-c:\users\yurin\source\repos\project_1\project_1\puck.h(33): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-c:\users\yurin\source\repos\project_1\project_1\brickpile.cpp(14): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-  GameTable.cpp
-c:\users\yurin\source\repos\project_1\project_1\puck.h(24): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-c:\users\yurin\source\repos\project_1\project_1\puck.h(25): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-c:\users\yurin\source\repos\project_1\project_1\puck.h(29): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-c:\users\yurin\source\repos\project_1\project_1\puck.h(33): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-  PROJECT_1.cpp
-c:\users\yurin\source\repos\project_1\project_1\puck.h(24): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-c:\users\yurin\source\repos\project_1\project_1\puck.h(25): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-c:\users\yurin\source\repos\project_1\project_1\puck.h(29): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-c:\users\yurin\source\repos\project_1\project_1\puck.h(33): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-  Создание кода...
-  PROJECT_1.vcxproj -> C:\Users\yurin\source\repos\PROJECT_1\x64\Debug\PROJECT_1.exe
+﻿  PROJECT_1.vcxproj -> C:\Users\yurin\source\repos\PROJECT_1\x64\Debug\PROJECT_1.exe
